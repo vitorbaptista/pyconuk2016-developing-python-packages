@@ -8,12 +8,6 @@ class: center, middle, inverse
 
 ---
 
-class: center, middle
-
-# Who am I?
-
----
-
 background-image: url(img/oki.svg)
 class: inverse
 
