@@ -58,7 +58,7 @@ setup(
 # Let's build it!
 
 ```bash
-$ python setup.py sdist bdist_wheel
+*$ python setup.py sdist bdist_wheel
 # ...
 $ ls dist/
 pyconuk_helloworld-0.0.1-py2-none-any.whl
@@ -459,15 +459,15 @@ mistakes. Alter your `tox.ini` file adding:
 [tox]
 envlist =
     # ...
-*   lint
+    lint
 
 # ...
 
-*[testenv:lint]
-*deps =
-*    flake8
-*commands =
-*    flake8 .
+[testenv:lint]
+deps =
+    flake8
+commands =
+    flake8 .
 ```
 
 ---
@@ -531,16 +531,14 @@ Now we can run `tox -e security`. It should find no issues.
 
 # Validate setup.py
 
-This checks if your `setup.py` is valid, including the reStructuredText strings.
+This checks if your `setup.py` is valid, including the reStructuredText.
 
 ```ini
 [tox]
 envlist =
 # ...
     setuppy
-
 # ...
-
 [testenv:setuppy]
 deps =
     docutils
@@ -632,7 +630,7 @@ script: tox
 
 class: center, middle
 
-# Doesn't Travis support OSX?
+# Travis + Python + OSX
 
 ---
 
