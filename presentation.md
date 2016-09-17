@@ -871,7 +871,7 @@ class: center, middle, inverse
 
 .footnote[vitor@vitorbaptista.com]
 
-.footnote[https://github.com/vitorbaptista]
+.footnote[http://vitorbaptista.com/pyconuk2016-developing-python-packages]
 
 ---
 
