@@ -620,10 +620,7 @@ class: center, middle, inverse
 ```yaml
 # .travis.yml
 language: python
-
-os:
-    - linux
-
+os: linux
 python:
     - 2.7
     - 3.3
@@ -633,9 +630,7 @@ python:
 env:
     - TOXENV="py${PYTHON_VERSION//./}"
 
-install:
-    - pip install tox
-
+install: pip install tox
 script: tox
 ```
 
@@ -663,10 +658,8 @@ environment:
     - PYTHON: 'C:\\Python35'
       TOXENV: 'py35'
 
-install:
-  - '%PYTHON%\\python.exe -m pip install tox'
-test_script:
-  - '%PYTHON%\\scripts\\tox'
+install: '%PYTHON%\\python.exe -m pip install tox'
+test_script: '%PYTHON%\\scripts\\tox'
 ```
 
 .footnote[Add `appveyor.yml` to the files ignored by `check-manifest` in `setup.cfg`]
